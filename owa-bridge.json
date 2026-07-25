@@ -1,19 +1,19 @@
 {
-    "version": "0.5.0",
+    "version": "0.6.0",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/nkiyohara/owa-bridge/releases/download/v0.5.0/owa-bridge_0.5.0_windows_amd64.zip",
+            "url": "https://github.com/nkiyohara/owa-bridge/releases/download/v0.6.0/owa-bridge_0.6.0_windows_amd64.zip",
             "bin": [
                 "owa.exe"
             ],
-            "hash": "b3f771c8e5bc90d478c45ad5c091cafaaeddce59b8c1a39b190350c740955f34"
+            "hash": "764c2417f9eb761c71e36032a45e40a6cf74381a4382fd28b8bc9b93852d1f5b"
         },
         "arm64": {
-            "url": "https://github.com/nkiyohara/owa-bridge/releases/download/v0.5.0/owa-bridge_0.5.0_windows_arm64.zip",
+            "url": "https://github.com/nkiyohara/owa-bridge/releases/download/v0.6.0/owa-bridge_0.6.0_windows_arm64.zip",
             "bin": [
                 "owa.exe"
             ],
-            "hash": "d36daa8989410915a144c8341e24988aeadcbe1f81a8cb66f53b043bdeaf7be8"
+            "hash": "e8f072215ea36b21e1024af666310cbcc9d1fa66667608bb3939f42d5d561c54"
         }
     },
     "homepage": "https://github.com/nkiyohara/owa-bridge",
