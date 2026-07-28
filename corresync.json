@@ -1,0 +1,35 @@
+{
+    "version": "0.7.0",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/nkiyohara/corresync/releases/download/v0.7.0/corresync_0.7.0_windows_amd64.zip",
+            "bin": [
+                "corresync.exe"
+            ],
+            "hash": "020747f8fdfbb683c4bb119458236e866a13a7b48c1c553017aeb3d37c3e4288"
+        },
+        "arm64": {
+            "url": "https://github.com/nkiyohara/corresync/releases/download/v0.7.0/corresync_0.7.0_windows_arm64.zip",
+            "bin": [
+                "corresync.exe"
+            ],
+            "hash": "e4dca2606e7cddd6846f3335598581fae801b24f2580147c13a4a065c9d556ab"
+        }
+    },
+    "homepage": "https://github.com/nkiyohara/corresync",
+    "license": "Apache-2.0",
+    "description": "Local-first guarded mail and calendar CLI and MCP server",
+    "checkver": {
+        "github": "https://github.com/nkiyohara/corresync"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/nkiyohara/corresync/releases/download/v$version/corresync_$version_windows_amd64.zip"
+            },
+            "arm64": {
+                "url": "https://github.com/nkiyohara/corresync/releases/download/v$version/corresync_$version_windows_arm64.zip"
+            }
+        }
+    }
+}

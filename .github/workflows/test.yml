@@ -20,15 +20,15 @@ jobs:
     timeout-minutes: 10
     steps:
       - name: Check out bucket
-        uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           persist-credentials: false
 
       - name: Validate manifest, hashes, and executable
         shell: pwsh
         run: |
-          $manifest = Get-Content -Raw .\owa-bridge.json | ConvertFrom-Json
-          $downloads = Join-Path $env:RUNNER_TEMP 'owa-bridge-downloads'
+          $manifest = Get-Content -Raw .\corresync.json | ConvertFrom-Json
+          $downloads = Join-Path $env:RUNNER_TEMP 'corresync-downloads'
           New-Item -ItemType Directory -Path $downloads | Out-Null
 
           foreach ($entry in $manifest.architecture.PSObject.Properties) {
@@ -42,4 +42,4 @@ jobs:
 
           $install = Join-Path $downloads 'installed'
           Expand-Archive (Join-Path $downloads '64bit.zip') -DestinationPath $install
-          & (Join-Path $install 'owa.exe') version --json
+          & (Join-Path $install 'corresync.exe') version --json
