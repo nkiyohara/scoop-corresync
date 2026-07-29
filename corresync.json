@@ -1,19 +1,21 @@
 {
-    "version": "0.7.0",
+    "version": "0.8.0",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/nkiyohara/corresync/releases/download/v0.7.0/corresync_0.7.0_windows_amd64.zip",
+            "url": "https://github.com/nkiyohara/corresync/releases/download/v0.8.0/corresync_0.8.0_windows_amd64.zip",
             "bin": [
+                "corr.exe",
                 "corresync.exe"
             ],
-            "hash": "020747f8fdfbb683c4bb119458236e866a13a7b48c1c553017aeb3d37c3e4288"
+            "hash": "bca363d9e6b2277285f07e846015f6458e326337ea30818782329b8fe8794b6b"
         },
         "arm64": {
-            "url": "https://github.com/nkiyohara/corresync/releases/download/v0.7.0/corresync_0.7.0_windows_arm64.zip",
+            "url": "https://github.com/nkiyohara/corresync/releases/download/v0.8.0/corresync_0.8.0_windows_arm64.zip",
             "bin": [
+                "corr.exe",
                 "corresync.exe"
             ],
-            "hash": "e4dca2606e7cddd6846f3335598581fae801b24f2580147c13a4a065c9d556ab"
+            "hash": "ab48124f9ed0ae3e2a78ee2964928058aebd740e4bbf524fc7facfcba98282ac"
         }
     },
     "homepage": "https://github.com/nkiyohara/corresync",
